@@ -1,0 +1,11 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: cephfs-testpvc
+spec:
+  accessModes:     
+  - ReadWriteOnce
+  storageClassName: cephfs
+  resources:
+    requests:
+      storage: 1Mi
