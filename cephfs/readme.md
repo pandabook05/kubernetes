@@ -19,3 +19,5 @@
       key = AQCSOGRgx7jtGBAAeJvv/VsqZ/dTxcn8jHKABg==  
 
   kubectl create secret generic ceph-admin --type="kubernetes.io/rbd" --from-literal=key=AQCSOGRgx7jtGBAAeJvv/VsqZ/dTxcn8jHKABg== --namespace=kube-system  
+ 4.按顺序部署所有的yaml文件
+   kubectl apply -f 01~08.yaml  
